@@ -1,17 +1,32 @@
 {
   "name": "core_scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "core scripts",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=production node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "bryan alonso almeyda contreras",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "date-format": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "elastic-apm-node": "^3.25.0",
     "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "install": "^0.13.0",
+    "mariadb": "^2.5.5",
+    "node-xlsx": "^0.17.2",
     "sequelize": "^6.12.0-alpha.1",
-    "ssh2": "^1.5.0"
+    "ssh2": "^1.5.0",
+    "ssh2-sftp-client": "^7.1.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5",
+    "xml2js": "^0.4.23"
   }
 }
