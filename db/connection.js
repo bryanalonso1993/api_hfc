@@ -2,7 +2,6 @@
  * parametros de conexion a la base de datos
  */
 const { Sequelize } = require('sequelize');
-const logger = require('../config/logger');
 
 /**
  * Errors
@@ -22,6 +21,7 @@ const sequelize = new Sequelize(process.env.DB, process.env.USER_DB, process.env
 
 sequelize.authenticate()
         .then( () => {
+            captureErrors();
             logger.log({ level: 'info', message: 'Success Authentication ORM sequelize'});
         })
         .catch( e => {

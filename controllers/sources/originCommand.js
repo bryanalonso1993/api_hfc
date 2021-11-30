@@ -2,7 +2,7 @@ const { Client } = require('ssh2');
 /**
  * Logger
  */
-const logger = require('../config/logger');
+const logger = require('../../config/logger');
 
 class RemoteCommandsServer{
     /**
@@ -30,7 +30,7 @@ class RemoteCommandsServer{
                     logger( this.origin, 'info', `Stream :: close :: code: ${ code } , signal: ${ signal }`);
                     this.client.end();
                 }).on( 'data', data => {
-                    logger( this.origin, 'info', `Success execute command , response data ${ data }`);
+                    logger( this.origin, 'info', `Success execute command , response data ${ data }, command: ${ command }`);
                 }).stderr.on( 'data', data => {
                     logger( this.origin, 'error', `Stderr execute command : ${ data }`);
                 })

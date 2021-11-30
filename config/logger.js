@@ -29,6 +29,6 @@ const logger = ( source, level, message ) => createLogger({
 }).log({level, message});
 
 /**
- *  Logger format : logger.log({level: 'info',message:''});
+ *  Logger format : logger(source, level, message);
  */
 module.exports = logger;

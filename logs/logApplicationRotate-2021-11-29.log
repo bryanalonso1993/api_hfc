@@ -1,2 +1,6 @@
-11/29/2021, 12:16:10 PM|192.168.0.29|error|Error descarga del archivo origen: 192.168.0.29 , error: connect->getConnection: client-socket error. Address lookup failed for host test
-11/29/2021, 12:16:57 PM|OrigenSftp|error|Error descarga del archivo origen: OrigenSftp , error: get: No such file /data/test2.csv
+11/29/2021, 6:33:03 PM|sftpEngine|error|Stderr execute command : cat: 
+11/29/2021, 6:33:03 PM|sftpEngine|error|Stderr execute command : test123.js
+11/29/2021, 6:33:03 PM|sftpEngine|error|Stderr execute command : : No such file or directory
+11/29/2021, 6:33:03 PM|sftpEngine|error|Stderr execute command : 
+
+11/29/2021, 6:33:03 PM|sftpEngine|info|Stream :: close :: code: 1 , signal: undefined

@@ -1,5 +1,8 @@
 const Client = require('ssh2-sftp-client');
-const logger = require('../config/logger');
+/**
+ * Logs Application
+ */
+const logger = require('../../config/logger');
 const fs = require('fs');
 
 class OriginSftpServer{
